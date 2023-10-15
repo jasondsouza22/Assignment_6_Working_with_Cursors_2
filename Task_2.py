@@ -11,7 +11,6 @@ fields_list = ["NAME", "ESTAB", "ADDR", "CITYNM", "ZIP", "EMP", "ACRES"]
 record = ("New Town Restaurant", 2021, "841 STREET","SAN DIEGO", 92101, 150, 10)
 
 i_cursor = arcpy.da.InsertCursor(fc_path, fields_list)
-
 i_cursor.insertRow(record)
 
 print("Process Completed")
